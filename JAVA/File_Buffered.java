@@ -1,26 +1,23 @@
-package exce.ust;
+package file.ust;
 
-
-import java.io.FileReader;
+import java.io.InputStreamReader;
 import java.io.BufferedReader;
+import java.io.IOException;
 
 public class File_Buffered {
-	public static void  main(String args[]) {
-		char[] array=new char[100];
+	public static void main(String args[]) {
+		InputStreamReader ir=new InputStreamReader(System.in);
+		BufferedReader br=new BufferedReader(ir);
 		
 		try {
-			FileReader file=new FileReader("C:\\Users\\ustjavafsdb205\\Reader.txt");
-			
-			BufferedReader input=new BufferedReader(file);
-			
-			input.read(array);
-			System.out.println("Data in the file:");
-			
-			input.close();
+		System.out.println("Enter the age:");
+		String age=br.readLine();
+		System.out.println(age);
 		}
-		catch(Exception e) {
-			e.getStackTrace();
+		
+		catch(IOException e) {
+			e.printStackTrace();
 		}
-	}
-
+			
+		}
 }
