@@ -1,25 +1,22 @@
-package com.ust;
+package enu.ust;
 
+import java.util.*;
 public class Example {
-	public static void main (String args[]) {
-		char a='G';
-		int i=89;
-		byte b=4;
-		//byte b1=7888888955;
-		short s=56;
-		//short s1=87878787878;
-		
-		float f=4.73333434f;
-		double d=4.355453532;
-		System.out.println("char:"+a);
-		System.out.println("integer:"+i);
-		System.out.println("byte:"+b);
-		System.out.println("short:"+s);
-		System.out.println("float:"+f);
-		System.out.println("double:"+d);
 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Integer>list=new ArrayList<Integer>();
+		list.add(14);
+		list.add(2);
+		list.add(73);
+		
+		Enumeration en=Collections.enumeration(list);
+		while(en.hasMoreElements()) {
+			System.out.println(en.nextElement());
+		}
 		
 		
+
 	}
 
 }

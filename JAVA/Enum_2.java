@@ -1,6 +1,6 @@
 package enu.ust;
 
-enum Size{
+enum Size_1 {
 
 SMALL,MEDIUM,LARGE,EXTRALARGE
 }
