@@ -1,21 +1,23 @@
-package enu.ust;
+package stream.ust;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.function.Function;
+
+//import inter.ust.Function;
+
 public class Example {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		ArrayList<Integer>list=new ArrayList<Integer>();
-		list.add(14);
-		list.add(2);
-		list.add(73);
-		
-		Enumeration en=Collections.enumeration(list);
-		while(en.hasMoreElements()) {
-			System.out.println(en.nextElement());
-		}
-		
-		
+		List<String>names=Arrays.asList("Jon","Ajeet","steve","Ajeet","Jon","Ajeet");
+		Map<String,Long>map=names.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()
+				)
+				);
+		System.out.println(map);
+				
+
 
 	}
 
