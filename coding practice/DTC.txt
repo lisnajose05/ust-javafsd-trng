@@ -1,0 +1,28 @@
+public class DTC {
+
+
+
+   public static void main(String[] args) {
+        
+        
+        Scanner sc = new Scanner (System.in);
+        
+        System.out.println("Enter the associate id:");
+        int id=sc.nextInt();
+        System.out.println("Enter the associate name:");
+        String name=sc.next();
+        System.out.println("Enter the number of days:");
+        int days=sc.nextInt();
+        
+        
+        Associate a= new Associate(id,name);
+        a.trackAssociateStatus(days);
+        System.out.println("The  associate "+a.getAssociateName()+" work status: "+a.getWorkStatus());
+
+
+
+   }
+
+
+
+}

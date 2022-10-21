@@ -1,0 +1,20 @@
+class Compound{
+   
+    public static void main(String args[]){
+       
+     int a[]={1,9,8,4};  
+      int n=a.length;
+       int max=a[0];
+       for(int i=1;i<n;i++){
+           if(a[i]>max)
+           max=a[i];
+          
+       }
+    
+        
+        System.out.println("largest element"+max);
+        
+            
+        
+    }
+}

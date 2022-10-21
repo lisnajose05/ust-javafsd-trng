@@ -1,0 +1,16 @@
+import java.util.*;
+class main{
+    public static void main(String args[]){
+        ArrayList<String> a=new ArrayList<String>();
+        a.add("hi");
+        a.add("hello");
+        a.add("hi");
+        System.out.println("Array:"+a);
+        
+        Set<String> Set=new LinkedHashSet<>(a);
+        List<String> b=new ArrayList<>(Set);
+        System.out.println("Replaced Array:"+b);
+        
+    }
+        
+}

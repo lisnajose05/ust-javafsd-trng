@@ -1,0 +1,12 @@
+class Main{
+    public static void main(String args[]){
+      
+        int a[]={2,33,44,55};
+        for(int i:a){
+            System.out.print(i+"\n");
+            
+        }
+
+    }
+       
+}
