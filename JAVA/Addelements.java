@@ -1,9 +1,17 @@
-package day5.ust;
+package exer.ust;
 
 import java.util.ArrayList;
 
 
+/**
+ * The type Addelements.
+ */
 public class Addelements {
+	/**
+	 * Main.
+	 *
+	 * @param args the args
+	 */
 	public static void main(String args[]) {
 		ArrayList<String>languages=new ArrayList<>();
 		languages.add("Java");
